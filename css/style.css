@@ -6,6 +6,16 @@
 header{
     border: solid yellow 2px;
 }
+#navbarButton{
+    background-color:rgb(20, 255, 0);
+}
+#navbarOptions li:hover{
+    background-color: rgb(20, 255, 0);
+}
+.menuOptions{
+    color: white;
+    text-decoration:none;
+}
 #sectionText{
     border: solid green 2px;
 }
