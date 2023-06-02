@@ -1,0 +1,26 @@
+#mainBody{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 85);
+}
+header{
+    border: solid yellow 2px;
+}
+#sectionText{
+    border: solid green 2px;
+}
+#sectionDrums{
+    border: solid rgb(255, 0, 0) 2px;
+}
+#sectionPremium{
+    border: solid rgb(0, 247, 255) 2px;
+}
+#mainTitle, #subtitle, #premiumTitle, #premiumSubtitle{
+    color: white;
+}
+.greenButtons{
+    background-color: rgb(20, 255, 0);
+    border-radius: 20px;
+    padding: 15px 10px 15px 10px;
+    color: white;
+}

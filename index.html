@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
-  <body>
+  <body id="mainBody">
     <header>
       <nav class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -28,12 +28,12 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Music for everyone</h1>
-        <p>Millions of songs. No credit card needed</p>
-        <button>Hit the drumkit</button>
+      <section id="sectionText">
+        <h1 id="mainTitle">Music for everyone</h1>
+        <p id="subtitle">Millions of songs. No credit card needed</p>
+        <button class="greenButtons">Hit the drumkit</button>
       </section>
-      <section style="width: 700px; height: 600px;">
+      <section id="sectionDrums">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 780 538">
           <image width="780" height="538" xlink:href="media/img/drumkit.png"></image> 
           <a xlink:href="#" id="crash_map" title="d"><text x="70" y="95" fill="white" font-size="12" font-weight="bold" width="114" height="115">D</text>
@@ -66,10 +66,10 @@
           </a>
         </svg>
       </section>
-      <section>
-        <h2>Try Premium free for 1 month</h2>
-        <p>Play millions of song ad-free, on demand, and offline</p>
-        <button>See pricing</button>
+      <section id="sectionPremium">
+        <h2 id="premiumTitle">Try Premium free for 1 month</h2>
+        <p id="premiumSubtitle">Play millions of song ad-free, on demand, and offline</p>
+        <button class="greenButtons">See pricing</button>
       </section>
     </main>
   </body>
