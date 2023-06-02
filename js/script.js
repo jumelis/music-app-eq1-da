@@ -1,13 +1,13 @@
 
-const sonido = {
+const sound = {
         a: './media/audio/bombo (1).wav',
-        s: './media/audio/crash.wav',
-        d: './media/audio/hit-hat.wav',
-        f: './media/audio/redoblante.wav',
-        j: './media/audio/tom1.wav',
-        k: './media/audio/tom2.wav',
-        l: './media/audio/tom3.wav',
-        ñ: './media/audio/tom4.wav'
+        d: './media/audio/crash.wav',
+        f: './media/audio/hit-hat.wav',
+        s: './media/audio/redoblante.wav',
+        h: './media/audio/tom1.wav',
+        j: './media/audio/tom2.wav',
+        k: './media/audio/tom3.wav',
+        l: './media/audio/tom4.wav'
 };
 
 let bombo__1_map=document.getElementById('bombo__1_map');
@@ -19,31 +19,31 @@ let tom2_map=document.getElementById('tom2_map');
 let tom3_map=document.getElementById('tom3_map');
 let tom4_map=document.getElementById('tom4_map');
 
-function reproducirSonido(fuente) {
-        let audio = new Audio(fuente);
+function playSound(element) {
+        let audio = new Audio(element);
         audio.play();
 } 
 
 document.addEventListener('keydown',(e)=>{
-        const tecla = e.key.toLowerCase();
-        if(sonido[tecla]){
-                reproducirSonido(sonido[tecla]);
+        const keySound = e.key.toLowerCase();
+        if(sound[keySound]){
+                playSound(sound[keySound]);
         }
 });
 
   //con boton//
-function agregarEvento(elemento) {
-        elemento.addEventListener('click', () => {
-                let letra = elemento.getAttribute('title');
-                reproducirSonido(sonido[letra]);
+function addSoundEvent(element) {
+        element.addEventListener('click', () => {
+                let letter = element.getAttribute('title');
+                playSound(sound[letter]);
         });
 }
 
-agregarEvento(bombo__1_map);
-agregarEvento(crash_map);
-agregarEvento(hitHat_map);
-agregarEvento(redoblante_map);
-agregarEvento(tom1_map);
-agregarEvento(tom2_map);
-agregarEvento(tom3_map);
-agregarEvento(tom4_map);
+addSoundEvent(bombo__1_map);
+addSoundEvent(crash_map);
+addSoundEvent(hitHat_map);
+addSoundEvent(redoblante_map);
+addSoundEvent(tom1_map);
+addSoundEvent(tom2_map);
+addSoundEvent(tom3_map);
+addSoundEvent(tom4_map);
