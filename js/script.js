@@ -47,3 +47,13 @@ agregarEvento(tom1_map);
 agregarEvento(tom2_map);
 agregarEvento(tom3_map);
 agregarEvento(tom4_map);
+
+function check_user() {
+  const params = new URLSearchParams(window.location.search);
+  const user_name = params.get('username');
+  if (user_name == '') {
+    alert('Usuario no logeado');
+  } else {
+    alert('Bienvenido ' + user_name + '!!');
+  }
+}
