@@ -2,77 +2,82 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Music App</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body  onload="check_user()"">
-    <header>
-      <nav class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          ☰
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">  </head>
+  <body id="mainBody"  onload="check_user()">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <button id="navbarButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions">
+          <span class="navbar-toggler-icon"></span>
+
         </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><a class="dropdown-item" href="#">Login</a></li>
-          <li><a class="dropdown-item" href="#">Sign Up</a></li>
-          <li><a class="dropdown-item" href="#">Premium</a></li>
-          <li><a class="dropdown-item" href="#">Help</a></li>
-          <li><a class="dropdown-item" href="#">Download</a></li>
-        </ul>
+        <a class="navbar-brand" href="#">
+          <img src="media/img/logo-p3.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarOptions">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="menuOptions" href="#">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="menuOptions" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="menuOptions" href="#">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="menuOptions" href="#">| Login</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <br>
-      <br>
-      <div>
-        <a href=""><img src="media/img/logo-p3.png" alt="thedomboom"></a>
-      </div>
-    </header>
     <main>
-      <section>
-        <h1>Music for everyone</h1>
-        <p>Millions of songs. No credit card needed</p>
-        <button>Hit the drumkit</button>
+      <section id="sectionText">
+        <h1 id="mainTitle">Music for everyone</h1>
+        <p id="subtitle">Millions of songs. No credit card needed</p>
+        <button class="greenButtons">Hit the drumkit</button>
       </section>
-      <section>
+      <section id="sectionDrums">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 780 538">
           <image width="780" height="538" xlink:href="media/img/drumkit.png"></image> 
-          <a xlink:href="#"><text x="70" y="95" fill="white" font-size="12" font-weight="bold" width="114" height="115">D</text>
-            <circle fill="#ff9900" cy="90" cx="75" r="60" opacity="0.5" ></circle>
+          <a xlink:href="#" id="crash_map" title="d"><text x="70" y="95" fill="white" font-size="12" font-weight="bold" width="114" height="115">D</text>
+            <circle fill="#ff9900" cy="90" cx="75" r="60" opacity="0.5"></circle>
           </a>
-          <a xlink:href="#"><text x="130" y="215" fill="white" font-size="12" font-weight="bold" width="114" height="115">H</text>
+          <a xlink:href="#" id="tom1_map" title="h"><text x="130" y="215" fill="white" font-size="12" font-weight="bold" width="114" height="115">H</text>
             <circle fill="#0075ff" cy="212" cx="133" r="60" opacity="0.5" ></circle>
           </a>
-          <a xlink:href="#">
+          <a xlink:href="#"  id="tom2_map" title="j">
             <text x="290" y="170" fill="white" font-size="12" font-weight="bold" width="155" height="163">J</text>
             <circle cx="294" cy="165" r="83" fill="#14ff00" opacity="0.5" width="155" height="163"></circle>
           </a>
-          <a xlink:href="#">
+          <a xlink:href="#"  id="tom3_map" title="k">
             <text x="477" y="170" fill="white" font-size="12" font-weight="bold" width="155" height="163">K</text>
             <circle cx="480" cy="165" r="83" fill="#14ff00" opacity="0.5" width="155" height="163"></circle>
           </a>
-          <a xlink:href="#"><text x="695" y="95" fill="white" font-size="12" font-weight="bold" width="114" height="115">F</text>
+          <a xlink:href="#" id="hitHat_map" title="f"><text x="695" y="95" fill="white" font-size="12" font-weight="bold" width="114" height="115">F</text>
             <circle fill="#ff9900" cy="90" cx="700" r="60" opacity="0.5" ></circle>
           </a>
-          <a xlink:href="#"><text x="635" y="215" fill="white" font-size="12" font-weight="bold" width="114" height="115">L</text>
+          <a xlink:href="#" id="tom4_map" title="l"><text x="635" y="215" fill="white" font-size="12" font-weight="bold" width="114" height="115">L</text>
             <circle fill="#0075ff" cy="212" cx="638" r="60" opacity="0.5" ></circle>
           </a>
-          <a xlink:href="#">
+          <a xlink:href="#"  id="bombo__1_map" title="a">
             <text x="196" y="370" fill="white" font-size="12" font-weight="bold" width="155" height="163">A</text>
             <circle cx="200" cy="365" r="83" fill="#ff0000" opacity="0.5" width="155" height="163"></circle>
           </a>
-          <a xlink:href="#">
+          <a xlink:href="#" id="redoblante_map" title="s">
             <text x="572" y="370" fill="white" font-size="12" font-weight="bold" width="155" height="163">S</text>
             <circle cx="575" cy="365" r="83" fill="#ff0000" opacity="0.5" width="155" height="163"></circle>
           </a>
         </svg>
       </section>
-      <section>
-        <h2>Try Premium free for 1 month</h2>
-        <p>Play millions of song ad-free, on demand, and offline</p>
-        <button>See pricing</button>
+      <section id="sectionPremium">
+        <h2 id="premiumTitle">Try Premium free for 1 month</h2>
+        <p id="premiumSubtitle">Play millions of song ad-free, on demand, and offline</p>
+        <button class="greenButtons">See pricing</button>
       </section>
     </main>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>   <script src="js/script.js"></script>
 </html> 
