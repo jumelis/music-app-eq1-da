@@ -39,14 +39,14 @@ function addSoundEvent(element) {
         });
 }
 
-agregarEvento(bombo__1_map);
-agregarEvento(crash_map);
-agregarEvento(hitHat_map);
-agregarEvento(redoblante_map);
-agregarEvento(tom1_map);
-agregarEvento(tom2_map);
-agregarEvento(tom3_map);
-agregarEvento(tom4_map);
+addSoundEvent(bombo__1_map);
+addSoundEvent(crash_map);
+addSoundEvent(hitHat_map);
+addSoundEvent(redoblante_map);
+addSoundEvent(tom1_map);
+addSoundEvent(tom2_map);
+addSoundEvent(tom3_map);
+addSoundEvent(tom4_map);
 
 function check_user() {
   const params = new URLSearchParams(window.location.search);
