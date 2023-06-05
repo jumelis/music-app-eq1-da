@@ -1,36 +1,131 @@
-#mainBody{
+#mainBody {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(5, 0, 85);
+}
+
+#sectionText {
+  border: solid green 2px;
+}
+
+#sectionPremium {
+  border: solid rgb(0, 247, 255) 2px;
+}
+#mainTitle,
+#subtitle,
+#premiumTitle,
+#premiumSubtitle {
+  color: white;
+}
+.greenButtons {
+  background-color: rgb(20, 255, 0);
+  border-radius: 20px;
+  padding: 15px 10px 15px 10px;
+  color: white;
+}
+/*TOP-NAV*/
+#topnav {
+  display: flex;
+}
+
+#navbarButton {
+  background-color: rgb(20, 255, 0);
+}
+#navbarOptions {
+  justify-content: flex-end;
+}
+.navbar-nav {
+  margin-right: 70px;
+}
+
+.nav-item-bar {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+.nav-item {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.nav-item:hover {
+  background-color: rgb(20, 255, 0);
+}
+.menuOptions {
+  color: white;
+  text-decoration: none;
+}
+
+/*IMG-LOGO*/
+
+#img-logo {
+  margin-left: 70px;
+  margin-top: 50px;
+  width: 398px;
+  height: 102px;
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+}
+
+#sectionDrums {
+  border: solid rgb(255, 0, 0) 2px;
+  width: 50%;
+}
+
+#sectionText {
+  border: solid green 2px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 420px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #sectionDrums {
+    width: 100%;
+  }
+  #sectionText {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #img-logo {
+    margin: 0px;
+    width: 200px;
+    height: 50px;
+  }
+  .nav-item-bar {
+    display: none;
+  }
+  .nav-item {
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    
+  }
+  
+#navbarOptions{
+    
+}
+  .navbar-nav{
+    display: flex;
     margin: 0;
-    padding: 0;
-    background-color: rgb(5, 0, 85);
-}
-header{
-    border: solid yellow 2px;
-}
-#navbarButton{
-    background-color:rgb(20, 255, 0);
-}
-#navbarOptions li:hover{
-    background-color: rgb(20, 255, 0);
-}
-.menuOptions{
-    color: white;
-    text-decoration:none;
-}
-#sectionText{
-    border: solid green 2px;
-}
-#sectionDrums{
-    border: solid rgb(255, 0, 0) 2px;
-}
-#sectionPremium{
-    border: solid rgb(0, 247, 255) 2px;
-}
-#mainTitle, #subtitle, #premiumTitle, #premiumSubtitle{
-    color: white;
-}
-.greenButtons{
-    background-color: rgb(20, 255, 0);
-    border-radius: 20px;
-    padding: 15px 10px 15px 10px;
-    color: white;
+    flex-direction: row;
+
+  }
 }
