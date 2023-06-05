@@ -34,3 +34,30 @@ header{
     padding: 15px 10px 15px 10px;
     color: white;
 }
+.circleInt{
+     fill-opacity:0.5;
+     stroke-width:8;
+     stroke:#0527bdbd;
+}
+.textInt{
+     fill:#ffffff;
+     font-size: .9rem;
+     font-weight: 800;
+}
+
+.color {
+     transition: fill 1s, stroken 2s;
+}
+
+.orange{
+     fill: #ff9900;
+}
+.blue{
+     fill: #0075ff;
+}
+.green{
+     fill:#14ff00;
+}
+.red{
+     fill: #ff0000;
+}
