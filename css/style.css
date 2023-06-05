@@ -1,0 +1,43 @@
+.circleInt{
+     fill-opacity:0.5;
+     stroke-width:8;
+     stroke:#0527bdbd;
+}
+.textInt{
+     fill:#ffffff;
+     font-size: .9rem;
+     font-weight: 800;
+}
+
+.animate {
+     animation: movScale 1s infinite linear;
+}
+@keyframes movScale {
+     0% {
+          transform: scale(.5);
+
+     }
+     100% {
+          transform: scale(1);
+     }
+} 
+
+.color {
+     /* transition-property: fill;
+     transition-duration: 1s; */
+     transition: fill 1s, stroken 2s;
+}
+
+
+.orange{
+     fill: #ff9900;
+}
+.blue{
+     fill: #0075ff;
+}
+.green{
+     fill:#14ff00;
+}
+.red{
+     fill: #ff0000;
+}
