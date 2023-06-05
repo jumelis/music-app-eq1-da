@@ -1,49 +1,25 @@
-
-const sound = {
-        a: './media/audio/bombo (1).wav',
-        d: './media/audio/crash.wav',
-        f: './media/audio/hit-hat.wav',
-        s: './media/audio/redoblante.wav',
-        h: './media/audio/tom1.wav',
-        j: './media/audio/tom2.wav',
-        k: './media/audio/tom3.wav',
-        l: './media/audio/tom4.wav'
-};
-
-let bombo__1_map=document.getElementById('bombo__1_map');
-let crash_map=document.getElementById('crash_map');
-let hitHat_map=document.getElementById('hitHat_map');
-let redoblante_map=document.getElementById('redoblante_map');
-let tom1_map=document.getElementById('tom1_map');
-let tom2_map=document.getElementById('tom2_map');
-let tom3_map=document.getElementById('tom3_map');
-let tom4_map=document.getElementById('tom4_map');
-
-function playSound(element) {
+const playSound=(element)=>{
         let audio = new Audio(element);
         audio.play();
-} 
+}
 
-document.addEventListener('keydown',(e)=>{
+document.addEventListener('keypress',(e)=>{
         const keySound = e.key.toLowerCase();
         if(sound[keySound]){
                 playSound(sound[keySound]);
+                propertiesKeyCircle(keyCircle[keySound]);
         }
 });
 
-  //con boton//
-function addSoundEvent(element) {
-        element.addEventListener('click', () => {
-                let letter = element.getAttribute('title');
-                playSound(sound[letter]);
-        });
-}
-
-addSoundEvent(bombo__1_map);
-addSoundEvent(crash_map);
-addSoundEvent(hitHat_map);
-addSoundEvent(redoblante_map);
-addSoundEvent(tom1_map);
-addSoundEvent(tom2_map);
-addSoundEvent(tom3_map);
-addSoundEvent(tom4_map);
+function checkUser() {
+        let urlWithParamUserName = window.location.search; 
+        let params = new URLSearchParams(urlWithParamUserName); 
+        let userName = params.get('param-name');
+      
+        if (userName != null) { 
+              document.getElementById("loginItem").style.display = "none";
+              let navItemActiveUser = document.getElementById("activeUser"); 
+              navItemActiveUser.textContent = userName;
+              navItemActiveUser.style.display = "block";
+        }
+      }
