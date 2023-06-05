@@ -19,7 +19,6 @@ const propertiesCircle=(element)=>{
           circle.style.strokeWidth='12';
           circle.style.stroke="#1a0425";
           circle.style.fillOpacity='.75';
-          //circle.classList.add('animate');
           circle.classList.toggle('color');
      });
      element.addEventListener('mouseout',()=>{
@@ -27,7 +26,6 @@ const propertiesCircle=(element)=>{
           circle.style.strokeWidth=strokeWidthCircle;
           circle.style.stroke=strokeCircle;
           circle.style.fillOpacity=fillOpacityCircle;
-          //circle.classList.remove('animate')
           circle.classList.toggle('color');
      });
 } 
