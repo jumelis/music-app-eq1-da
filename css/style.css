@@ -1,39 +1,195 @@
-#mainBody{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(5, 0, 85);
+#mainBody {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(5, 0, 85);
 }
+
+#sectionText {
+  border: solid green 2px;
+}
+
+#sectionPremium {
+  border: solid rgb(0, 247, 255) 2px;
+}
+#mainTitle,
+#subtitle,
+#premiumTitle,
+#premiumSubtitle {
+  color: white;
+}
+.greenButtons {
+  background-color: rgb(20, 255, 0);
+  border-radius: 20px;
+  padding: 15px 10px 15px 10px;
+  color: white;
+}
+/*TOP-NAV*/
+#topnav {
+  display: flex;
+}
+
+#navbarButton {
+  background-color: rgb(20, 255, 0);
+}
+#navbarOptions {
+  justify-content: flex-end;
+}
+.navbar-nav {
+  margin-right: 70px;
+}
+
+.nav-item-bar {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+.nav-item {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.nav-item:hover {
+  background-color: rgb(20, 255, 0);
+}
+.menuOptions {
+  color: white;
+  text-decoration: none;
+}
+
+/*IMG-LOGO*/
+
+#img-logo {
+  margin-left: 70px;
+  margin-top: 50px;
+  width: 398px;
+  height: 102px;
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+}
+
 header{
-    border: solid yellow 2px;
+  border: solid yellow 2px;
 }
 #navbarButton{
-    background-color:rgb(20, 255, 0);
+  background-color:rgb(20, 255, 0);
 }
 #navbarOptions li:hover{
-    background-color: rgb(20, 255, 0);
+  background-color: rgb(20, 255, 0);
 }
 .menuOptions{
-    color: white;
-    text-decoration:none;
+  color: white;
+  text-decoration:none;
 }
+
+/*Section Text*/
 #sectionText{
-    border: solid green 2px;
+  border: solid green 2px;
+  padding-left: 70px;
+  width: 50%;
+}#mainTitle{
+  font-size: 96px;
+  font-weight: bold;
 }
+
 #sectionDrums{
-    border: solid rgb(255, 0, 0) 2px;
+  border: solid rgb(255, 0, 0) 2px;
+  padding-right: 70px;
+  width: 50%;
 }
+
 #sectionPremium{
-    border: solid rgb(0, 247, 255) 2px;
+  border: solid rgb(0, 247, 255) 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#premiumTitle{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+#premiumSubtitle{
+  text-align: center;
+}
+#sectionPremium button{
+  margin: 0px 610px;
+  padding: 5px 7px;
 }
 #mainTitle, #subtitle, #premiumTitle, #premiumSubtitle{
-    color: white;
+  color: white;
 }
 .greenButtons{
-    background-color: rgb(20, 255, 0);
-    border-radius: 20px;
-    padding: 15px 10px 15px 10px;
-    color: white;
+  background-color: rgb(20, 255, 0);
+  border-radius: 20px;
+  padding: 15px 10px 15px 10px;
+  color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #sectionDrums {
+    width: 100%;
+    padding: 0;
+  }
+  #sectionText {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #mainTitle{
+    font-size: 48px;
+  }
+  #premiumTitle{
+    font-size: 32px;
+    padding: 0px 15px 0px 15px;
+  }
+  #sectionPremium button{
+    margin: 0px 90px;
+  }
+  
+  #img-logo {
+    margin: 0px;
+    width: 200px;
+    height: 50px;
+  }
+  .nav-item-bar {
+    display: none;
+  }
+  .nav-item {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+  }
+}
+
+
+
+
+
 .circleInt{
      fill-opacity:0.5;
      stroke-width:8;
